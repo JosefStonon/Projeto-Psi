@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*font-family: 'Roboto Condensed', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Roboto+Condensed:wght@300;400&display=swap');
+/*font-family: 'Nunito Sans', sans-serif;*/
+
+/*cor de fundo - #4D006B
+cor primaria de fonte - #FFF2FB 
+cor secundaria de destaque - #FF9A13
+*/
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,13 +21,18 @@ html {
     height: 100vh;
 }
 
-body {
+/*body {
     background-image: url(./img/fundo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 
+body {
+    background-color: #4D006B;
+    color: #FFF2FB;
+}
 .logo{
     width: 30%;
     justify-content: first baseline;
@@ -34,12 +50,73 @@ body {
 .text  {
     width: 50%;
     float: right;
-
 }
 
+.sub-text {
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tx {
+    height: 14rem;
+   position: relative;
+   top: 190px;
+   left: 20px;
+   border-left: #FF9A13 solid 3px;
+   border-radius: 5px;
+}
+
+.tx h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.tx h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.tx p {
+    position: relative;
+    top: -0.7rem;
+   left: -0.5rem;
+    margin-left: 35px;
+}
+
+.btn {
+    position: relative;
+    top: 25.5rem;
+    left: 5.5rem;
+    background-color: #FFF2FB;
+    color: #4D006B;
+    font-family: 'Nunito Sans', sans-serif;
+    border: #FFF2FB solid 1.1px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline:#FFF2FB solid 1.1px;
+    outline-offset: -1.1px;
+}
+
+.btn:hover {
+    background-color: #4D006B;
+    color: #FFF2FB;
+    outline-color: #FF9A13;
+}
+
+.btn p {
+    font-size: 2rem;
+    margin: 3px 35px 3px 35px;
+}
+
+
+/*
 .text .sub-text {
     max-width: 100%;
-    background-color: rgba(102, 222, 255, 0.1);
+    background-color: #FFF2FB;
     backdrop-filter: blur(2px);
     position: relative;
     width: 350px;
@@ -51,6 +128,8 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 38px 0px rgba(0, 0, 0, 0.72);
 }
+*/
+
 
 
 
@@ -75,10 +154,34 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #01240b;
+    position: relative;
+    color: #DED3DB;
     text-decoration: none;  
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
     padding: 1rem;
+    padding-bottom: 0.5rem;
     cursor: pointer;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: #FF9A13;
+
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    margin-bottom: .5rem;
+}
+
+nav a:hover {
+    color: #FFF2FB;
+}
+
+nav a:hover:after {
+    width: 100%;
 }
