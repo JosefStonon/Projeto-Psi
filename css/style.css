@@ -38,18 +38,32 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 6rem 17rem 0 64rem;
+    margin: 6rem 21rem 0 64rem;
     list-style: none;
    
 }
 
+nav ul li {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+}
+
+
 nav ul li a{
+    max-width: 100%;
     color: #143e4a;
     text-decoration: none;
     font-size: 1.8rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     color: rgb(41, 41, 68);
+    margin: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(22, 70, 118);
 }
 
 nav ul li button {
@@ -62,7 +76,6 @@ nav ul li button {
 }
 
 .active {
-    color: #143e4a;
     font-size: 2rem;
 }
 
@@ -86,7 +99,7 @@ button i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4; 
-    overflow: hidden;
+    
 }
 
 .card {
@@ -96,6 +109,7 @@ button i:hover {
     width: 35%;
     background: transparent;
     border: none;
+    float: left;
   
 
 }
@@ -140,8 +154,20 @@ button i:hover {
 }
 
 .card2 {
+    position: relative;
+    top: 11rem;
+    right: 17rem;
+    
+    width: 80rem;
+    height: 50rem;
+    float: right;
+    display: flex;
+    flex-direction: column;
 
 }
+
+
+
 
 
 
