@@ -215,7 +215,7 @@ button i:hover {
 .main2 {
     display: flex;
     position: absolute;
-    top: 82rem;
+    top: 79rem;
     left: 17rem;
 }
 
@@ -226,12 +226,16 @@ button i:hover {
 .m2s2 {
     position: relative;
     top: 10rem;
-    width: 150rem;
+    width: 160rem;
     height: 90rem;
     background-color: #002e5a;
-    border-radius: 10px  80px;
+    border-radius: 80px  80px;
     background-image: linear-gradient(to left, #124863 10%, #FDC7F1 100%);
     
+}
+
+.m2s1 {
+    margin-top: 3rem;
 }
 
 .img {
