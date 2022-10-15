@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 html {
     box-sizing: border-box;
     margin: 0;
@@ -159,12 +160,12 @@ button i:hover {
 }
 
 .card h1 {
-    color: rgb(255, 253, 236);
+    color: rgb(56, 56, 56);
     margin-left: 2rem;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 500;
-    font-family: 'Oswald', sans-serif;
-    filter: drop-shadow(2px 2px 2px #000000);
+    font-family: 'Barlow', sans-serif;
+    
 }
 
 .card h2 {
@@ -230,7 +231,7 @@ button i:hover {
     height: 90rem;
     background-color: #002e5a;
     border-radius: 80px  80px;
-    background-image: linear-gradient(to left, #124863 10%, #FDC7F1 100%);
+    background-image: linear-gradient(to left, #f46262 10%, #FDC7F1 100%);
     
 }
 
